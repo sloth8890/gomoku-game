@@ -9,11 +9,12 @@ Gomoku in the Mist is a new game based on Gomoku. It inherits all the rules from
 
 Initially, the hole of the Mist locates at the centre of the board before the first move. The Mist (hole) changes after every placement of a stone. The position of hole depends on the previous placement of a stone. If a numerical coordinate system is used, the following rules apply:
 
-$x_{mist} = 1 + (5x^2_{stone} + 3x_{stone} + 4) \% 19$
+$$x_{mist} = 1 + (5x^2_{stone} + 3x_{stone} + 4) \% 19$$
 
-$ y_{mist} = 1 + (4y^2_{stone} + 2y_{stone} − 4) \% 19$
 
-% is the modulo operator.
+$$y_{mist} = 1 + (4y^2_{stone} + 2y_{stone} − 4) \% 19$$
+
+where $\%$ is the modulo operator.
 
 $(x_{mist}, y_{mist})$ denotes the position of the **hole**'s centre and $(x_{stone}, y_{stone})$ denotes the position of the previous placed stone. 
 
